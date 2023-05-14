@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="icon" href="assets/image/Logo YukKuliner.png" />
+
+    <title>Yuk Kulineran</title>
+  </head>
+
+  <body class="contain">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
+
+    <!-- MENU -->
+
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container inner-navbar">
+        <a class="navbar-brand" href="#">
+          <svg width="45" height="35" viewBox="0 0 45 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto d-block align-text-top">
+            <path
+              d="M0 27.3639C3.78723 26.5826 7.50653 25.7226 11.2485 25.0726C16.8812 24.101 22.1289 21.7047 27.4616 19.5644C30.479 18.3564 33.6322 17.4176 36.791 16.9515C39.0328 16.6167 41.3991 17.1616 43.6805 17.5292C45.1241 17.7656 45.1467 18.0347 44.8467 19.9124C39.9782 18.3236 35.1324 18.6059 30.3148 20.2735C35.1833 19.3412 40.0348 18.7766 44.7957 21.0941C44.1447 24.6853 42.5936 27.4952 40.2499 29.7011C36.9382 32.8129 33.1453 34.7037 28.8939 34.9729C23.4197 35.3208 19.3777 32.3009 16.4453 27.1209C16.0151 26.3594 15.5792 26.0771 14.8206 26.1165C11.8202 26.2609 8.96139 27.0225 6.1988 28.388C4.95904 29.0051 3.674 29.5632 2.36064 29.898C0.730263 30.3379 0.0113221 29.4975 0 27.3639Z"
+              fill="#F65F5F"
+            />
+            <path
+              d="M20.1193 21.1595C19.6324 19.3738 19.2531 16.8922 20.3344 14.9358C20.725 14.2267 21.0533 14.0429 21.41 13.4455C22.1063 12.2637 22.5252 10.0907 20.9798 5.73138C21.5119 6.17125 22.2138 6.88029 22.695 7.9701C23.2442 9.21092 23.1706 10.1694 23.3404 11.2067C23.5385 12.4344 24.1329 14.102 25.9162 15.9337C25.7294 15.264 25.5312 14.3317 25.4859 13.196C25.4463 12.0799 25.5652 11.1345 25.701 10.4583C25.9048 11.1477 26.2332 12.0274 26.7767 12.9465C27.139 13.5571 27.5126 14.0495 27.8522 14.4368C27.3824 13.6358 26.7597 12.3753 26.3521 10.7012C26.0407 9.42101 25.7011 7.28076 26.137 4.72691C26.5106 2.54071 27.3031 0.932254 27.8522 0C27.8126 0.800951 27.8296 2.33063 28.4976 3.97849C29.5222 6.51921 31.3904 7.64185 31.9282 7.95698C33.2755 8.7448 33.5529 8.31806 36.2193 9.20436C38.3025 9.8937 39.3441 10.2417 40.2952 11.1936C40.8387 11.7319 42.1011 13.2157 42.4407 16.4195C41.2179 16.1831 39.5649 15.973 37.6119 16.0453C35.4267 16.124 33.785 16.518 32.6754 16.7937C30.9771 17.2139 29.6128 17.7391 26.8842 18.7829C25.2991 19.3935 24.1669 19.8728 22.1629 20.5227C21.3081 20.8116 20.6005 21.0217 20.1193 21.1595Z"
+              fill="#FDCE77"
+            />
+            <path
+              d="M33.5191 16.3408C33.5474 16.4458 34.7928 15.8681 36.5251 15.5923C38.5857 15.2641 40.3689 15.5135 41.6766 15.8418C41.688 14.752 41.4219 13.997 41.2464 13.6031C40.7878 12.5592 40.0802 11.9815 39.316 11.3644C38.7216 10.8786 38.1838 10.5634 37.8158 10.3665C38.314 10.8195 38.931 11.4694 39.5311 12.3557C40.1538 13.2748 40.5557 14.1546 40.8161 14.8439C39.95 14.6863 38.6706 14.5616 37.1704 14.8439C35.1381 15.2378 33.4851 16.2226 33.5191 16.3408Z"
+              fill="#0D0D0D"
+            />
+          </svg>
+
+          <div class="logo">
+            <h2>Yuk<span>Kulineran</span></h2>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="aboutus.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="tempat.html">Tempat</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Makanan</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="about" class="about-us section mb-batas">
+      <!-- <img src="assets/image/Ellipse 2.png" alt="" class="position-absolute bg1" /> -->
+      <img src="assets/image/aboutus blur kanan.png" alt="" class="position-absolute bg1-blur" />
+      <img src="assets/image/aboutus blur kiri.png" alt="" class="position-absolute bg2-blur" />
+      <img src="assets/image/aboutus kanan bawah.png" alt="" class="position-absolute bg1-makanan" />
+      <img src="assets/image/aboutus kiri bawah.png" alt="" class="position-absolute bg2-makanan" />
+      <img src="assets/image/kiri bawah.png" alt="" class="position-absolute bg3-makanan" />
+      <img src="assets/image/aboutus kanan.png" alt="" class="position-absolute bg4-makanan" />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="section-heading mx-5" style="text-align: center">
+              <h2>About Yuk <span>kulineran </span></h2>
+              <p style="margin-top: 10px">With our easy-to-use platform, you can buy or sell assets from anywhere in the world, at any time. bahabxsxndhc bevycerccncic chcyhechweicwwvhcec chewihcwehc cbeivcewhcihciwe bcewcwecwe</p>
+              <button type="button" class="btn btn-danger btn-lg rounded-5">Lainnya</button>
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
