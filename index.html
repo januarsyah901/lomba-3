@@ -16,6 +16,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="icon" href="assets/image/Logo YukKuliner.png" />
 
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Yuk Kulineran</title>
   </head>
 
@@ -65,7 +70,8 @@
               <a class="nav-link text-white" href="aboutus.html">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Kontak</a>
+              <!-- <a class="nav-link text-white" href="#">Kontak</a> -->
+              <button type="button" class="nav-link text-white btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontak</button>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="tempat.html">Tempat</a>
@@ -84,8 +90,27 @@
       </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #260907">
+          <div class="modal-header modal-header-edit" style="border: none">
+            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Kontak</h1> -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="position-relative" style="background-image: url(/assets/image/background-modal.png)">
+              <img src="/assets/image/background-modal.png" alt="" width="200px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Landing page -->
     <div id="about" class="about-us section mb-batas">
+      <!-- Button trigger modal -->
+
       <!-- <img src="assets/image/Ellipse 2.png" alt="" class="position-absolute bg1" /> -->
       <div class="position-absolute">
         <svg class="bg1" width="722" height="795" viewBox="0 0 722 795" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,213 +161,309 @@
 
     <!-- Offer -->
 
-      <div id="pricing" class="pricing-tables mt-offer ">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-lg-10 mx-auto">
-              <div class="section-heading text-white">
-                <p>OFFER</p>
-                <h2>MAKANAN YANG WAJIB KALIAN COBA HARI INI</h2>
-                <span>Di section ini anda akan disghkan dengan makanan yang menarik dan wajib kalian coba pada hari ini bahsbhaba xcicioiqw xcioiocaiscaosi ncioacioaixonsa</span>
+    <div id="pricing" class="pricing-tables mt-offer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-10 mx-auto">
+            <div class="section-heading text-white">
+              <p>OFFER</p>
+              <h2>MAKANAN YANG WAJIB KALIAN COBA HARI INI</h2>
+              <span>Di section ini anda akan disghkan dengan makanan yang menarik dan wajib kalian coba pada hari ini bahsbhaba xcicioiqw xcioiocaiscaosi ncioacioaixonsa</span>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex mx-a justify-content-center owl-carousel owl-theme">
+          <div class="mt-batas my-7">
+            <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
+              <div class="position-absolute translate-middle top-0 start-50">
+                <div class="position-relative d-flex justify-content-center gambar-makanan">
+                  <div class="">
+                    <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
+                      <defs>
+                        <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#F54748" stop-opacity="0" />
+                          <stop offset="1" stop-color="#FDC55E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
+                  <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 0">
+                    <p>99k</p>
+                    <span class="visually-hidden">Harga</span>
+                  </span>
+                </div>
+              </div>
+              <div class="tengah">
+                <div class="mx-auto m-2">
+                  <div class="row">
+                    <div class="position-relative col-6">
+                      <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
+                      <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
+                      <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
+                    </div>
+                    <div class="col-6 d-flex justify-content-start align-content-center">
+                      <i class="bi bi-star-fill" style="color: #fdce77"></i>
+
+                      <p class="text-white my-auto rating mx-1">(4.5)</p>
+                    </div>
+                  </div>
+                </div>
+                <span>Kebab</span>
+                <ul>
+                  <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
+
+              <div class="position-absolute button top-100 start-50 translate-middle">
+                <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
               </div>
             </div>
           </div>
-          <div class="row d-flex mx-a justify-content-center">
-            <div class="col-lg-3 col-6 mt-batas mb-batas">
-              <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
-                <div class="position-absolute translate-middle top-0 start-50">
-                  <div class="position-relative d-flex justify-content-center gambar-makanan">
-                    <div class="">
-                      <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
-                        <defs>
-                          <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F54748" stop-opacity="0" />
-                            <stop offset="1" stop-color="#FDC55E" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                    </div>
-                    <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
-                    <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 0">
-                      <p>99k</p>
-                      <span class="visually-hidden">Harga</span>
-                    </span>
+          <div class="mt-batas my-7">
+            <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
+              <div class="position-absolute translate-middle top-0 start-50">
+                <div class="position-relative d-flex justify-content-center gambar-makanan">
+                  <div class="">
+                    <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
+                      <defs>
+                        <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#F54748" stop-opacity="0" />
+                          <stop offset="1" stop-color="#FDC55E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </div>
-                </div>
-                <div class="tengah">
-                  <div class="mx-auto m-2">
-                    <div class="row">
-                      <div class="position-relative col-6">
-                        <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
-                        <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
-                        <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
-                      </div>
-                      <div class="col-6 d-flex justify-content-start align-content-center">
-                        <i class="bi bi-star-fill" style="color: #fdce77"></i>
-
-                        <p class="text-white my-auto rating mx-1">(4.5)</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span>Kebab</span>
-                  <ul>
-                    <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                  </ul>
-                </div>
-
-                <div class="position-absolute button top-100 start-50 translate-middle">
-                  <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
+                  <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
+                  <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
+                    <p>99k</p>
+                    <span class="visually-hidden">Harga</span>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-6 mt-batas mb-batas">
-              <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
-                <div class="position-absolute translate-middle top-0 start-50">
-                  <div class="position-relative d-flex justify-content-center gambar-makanan">
-                    <div class="">
-                      <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
-                        <defs>
-                          <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F54748" stop-opacity="0" />
-                            <stop offset="1" stop-color="#FDC55E" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
+              <div class="tengah">
+                <div class="mx-auto m-2">
+                  <div class="row">
+                    <div class="position-relative col-6">
+                      <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
+                      <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
+                      <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
                     </div>
-                    <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
-                    <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
-                      <p>99k</p>
-                      <span class="visually-hidden">Harga</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="tengah">
-                  <div class="mx-auto m-2">
-                    <div class="row">
-                      <div class="position-relative col-6">
-                        <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
-                        <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
-                        <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
-                      </div>
-                      <div class="col-6 d-flex justify-content-start align-content-center">
-                        <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
+                    <div class="col-6 d-flex justify-content-start align-content-center">
+                      <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
 
-                        <p class="text-white my-auto rating mx-1">(4.5)</p>
-                      </div>
+                      <p class="text-white my-auto rating mx-1">(4.5)</p>
                     </div>
                   </div>
-                  <span>Kebab</span>
-                  <ul>
-                    <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                  </ul>
                 </div>
+                <span>Kebab</span>
+                <ul>
+                  <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
 
-                <div class="position-absolute button top-100 start-50 translate-middle">
-                  <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
-                </div>
+              <div class="position-absolute button top-100 start-50 translate-middle">
+                <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
               </div>
             </div>
-            <div class="col-lg-3 col-6 mt-batas mb-batas">
-              <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
-                <div class="position-absolute translate-middle top-0 start-50">
-                  <div class="position-relative d-flex justify-content-center gambar-makanan">
-                    <div class="">
-                      <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
-                        <defs>
-                          <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F54748" stop-opacity="0" />
-                            <stop offset="1" stop-color="#FDC55E" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                    </div>
-                    <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
-                    <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
-                      <p>99k</p>
-                      <span class="visually-hidden">Harga</span>
-                    </span>
+          </div>
+          <div class="mt-batas my-7">
+            <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
+              <div class="position-absolute translate-middle top-0 start-50">
+                <div class="position-relative d-flex justify-content-center gambar-makanan">
+                  <div class="">
+                    <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
+                      <defs>
+                        <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#F54748" stop-opacity="0" />
+                          <stop offset="1" stop-color="#FDC55E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </div>
-                </div>
-                <div class="tengah">
-                  <div class="mx-auto m-2">
-                    <div class="row">
-                      <div class="position-relative col-6">
-                        <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
-                        <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
-                        <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
-                      </div>
-                      <div class="col-6 d-flex justify-content-start align-content-center">
-                        <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
-
-                        <p class="text-white my-auto rating mx-1">(4.5)</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span>Kebab</span>
-                  <ul>
-                    <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                  </ul>
-                </div>
-
-                <div class="position-absolute button top-100 start-50 translate-middle">
-                  <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
+                  <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
+                  <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
+                    <p>99k</p>
+                    <span class="visually-hidden">Harga</span>
+                  </span>
                 </div>
               </div>
+              <div class="tengah">
+                <div class="mx-auto m-2">
+                  <div class="row">
+                    <div class="position-relative col-6">
+                      <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
+                      <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
+                      <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
+                    </div>
+                    <div class="col-6 d-flex justify-content-start align-content-center">
+                      <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
+
+                      <p class="text-white my-auto rating mx-1">(4.5)</p>
+                    </div>
+                  </div>
+                </div>
+                <span>Kebab</span>
+                <ul>
+                  <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
+
+              <div class="position-absolute button top-100 start-50 translate-middle">
+                <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
+              </div>
             </div>
-            <div class="col-lg-3 col-6 mt-batas mb-batas">
-              <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
-                <div class="position-absolute translate-middle top-0 start-50">
-                  <div class="position-relative d-flex justify-content-center gambar-makanan">
-                    <div class="">
-                      <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
-                        <defs>
-                          <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F54748" stop-opacity="0" />
-                            <stop offset="1" stop-color="#FDC55E" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
+          </div>
+          <div class="mt-batas my-7">
+            <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
+              <div class="position-absolute translate-middle top-0 start-50">
+                <div class="position-relative d-flex justify-content-center gambar-makanan">
+                  <div class="">
+                    <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
+                      <defs>
+                        <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#F54748" stop-opacity="0" />
+                          <stop offset="1" stop-color="#FDC55E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
+                  <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
+                    <p>99k</p>
+                    <span class="visually-hidden">Harga</span>
+                  </span>
+                </div>
+              </div>
+              <div class="tengah">
+                <div class="mx-auto m-2">
+                  <div class="row">
+                    <div class="position-relative col-6">
+                      <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
+                      <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
+                      <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
                     </div>
-                    <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
-                    <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
-                      <p>99k</p>
-                      <span class="visually-hidden">Harga</span>
-                    </span>
+                    <div class="col-6 d-flex justify-content-start align-content-center">
+                      <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
+
+                      <p class="text-white my-auto rating mx-1">(4.5)</p>
+                    </div>
                   </div>
                 </div>
-                <div class="tengah">
-                  <div class="mx-auto m-2">
-                    <div class="row">
-                      <div class="position-relative col-6">
-                        <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
-                        <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
-                        <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
-                      </div>
-                      <div class="col-6 d-flex justify-content-start align-content-center">
-                        <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
+                <span>Kebab</span>
+                <ul>
+                  <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
 
-                        <p class="text-white my-auto rating mx-1">(4.5)</p>
-                      </div>
+              <div class="position-absolute button top-100 start-50 translate-middle">
+                <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-batas my-7">
+            <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
+              <div class="position-absolute translate-middle top-0 start-50">
+                <div class="position-relative d-flex justify-content-center gambar-makanan">
+                  <div class="">
+                    <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
+                      <defs>
+                        <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#F54748" stop-opacity="0" />
+                          <stop offset="1" stop-color="#FDC55E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
+                  <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
+                    <p>99k</p>
+                    <span class="visually-hidden">Harga</span>
+                  </span>
+                </div>
+              </div>
+              <div class="tengah">
+                <div class="mx-auto m-2">
+                  <div class="row">
+                    <div class="position-relative col-6">
+                      <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
+                      <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
+                      <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
+                    </div>
+                    <div class="col-6 d-flex justify-content-start align-content-center">
+                      <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
+
+                      <p class="text-white my-auto rating mx-1">(4.5)</p>
                     </div>
                   </div>
-                  <span>Kebab</span>
-                  <ul>
-                    <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                  </ul>
                 </div>
+                <span>Kebab</span>
+                <ul>
+                  <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
 
-                <div class="position-absolute button top-100 start-50 translate-middle">
-                  <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
+              <div class="position-absolute button top-100 start-50 translate-middle">
+                <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-batas my-7">
+            <div class="item first-item mx-auto position-relative mt-5" style="background-image: url(assets/image/blur.png)">
+              <div class="position-absolute translate-middle top-0 start-50">
+                <div class="position-relative d-flex justify-content-center gambar-makanan">
+                  <div class="">
+                    <svg width="250" class="lingkaran" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="125.035" cy="124.965" r="116.153" transform="rotate(178.687 125.035 124.965)" stroke="url(#paint0_linear_29_791)" stroke-width="16" />
+                      <defs>
+                        <linearGradient id="paint0_linear_29_791" x1="131.787" y1="144.132" x2="131.787" y2="280.047" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#F54748" stop-opacity="0" />
+                          <stop offset="1" stop-color="#FDC55E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <img src="assets/image/makananbulat.png" alt="makanan" class="rounded-circle position-absolute" />
+                  <span class="position-absolute bottom-0 text-dark border-4 border-dark border rounded-circle badge1" style="background-color: #fdce77; right: 10%">
+                    <p>99k</p>
+                    <span class="visually-hidden">Harga</span>
+                  </span>
                 </div>
+              </div>
+              <div class="tengah">
+                <div class="mx-auto m-2">
+                  <div class="row">
+                    <div class="position-relative col-6">
+                      <img class="profil1 position-absolute" src="assets/image/profile (1).png" alt="" width="38px" />
+                      <img class="profil2 position-absolute" src="assets/image/profile (2).png" alt="" width="38px" />
+                      <img class="profil3 position-absolute" src="assets/image/profile (3).png" alt="" width="38px" />
+                    </div>
+                    <div class="col-6 d-flex justify-content-start align-content-center">
+                      <i class="bi bi-star-fill" style="color: #fdce77; font-size: 20px"></i>
+
+                      <p class="text-white my-auto rating mx-1">(4.5)</p>
+                    </div>
+                  </div>
+                </div>
+                <span>Kebab</span>
+                <ul>
+                  <li class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
+
+              <div class="position-absolute button top-100 start-50 translate-middle">
+                <a class="btn btn-danger rounded-5 tombol-akhir" style="background-color: #f65f5f; padding: 11px 12px" href="Makanan/makanan1.html">ORDER NOW</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Fitur -->
     <div class="position-relative">
@@ -395,8 +516,8 @@
         </div>
       </div>
 
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col-lg-4 col-6">
+      <div class="g-4 py-5 owl-carousel owl-theme">
+        <div class="">
           <div class="card rounded-5 text-white card-1 bg-transparent">
             <img src="assets/image/tempat.png" class="card-img1" alt="..." height="100%" />
             <div class="card-img-overlay">
@@ -422,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-6">
+        <div class="">
           <div class="card rounded-5 text-white card-1 bg-transparent">
             <img src="assets/image/tempat.png" class="card-img1" alt="..." height="100%" />
             <div class="card-img-overlay">
@@ -448,7 +569,85 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-6">
+        <div class="">
+          <div class="card rounded-5 text-white card-1 bg-transparent">
+            <img src="assets/image/tempat.png" class="card-img1" alt="..." height="100%" />
+            <div class="card-img-overlay">
+              <div class="d-flex align-content-end h-100 text-white">
+                <div class="overlay">
+                  <div class="background w-100 h-100 rounded-bottom">
+                    <img src="assets/image/Rectangle 4599.png" alt="" class=" " width="100%" height="100%" />
+                  </div>
+                  <button type="button" class="btn btn-danger rounded-4 btn-lg tombol" style="background-color: #f65f5f">LIHAT LENGKAP</button>
+                </div>
+                <ul class="d-flex list-unstyled">
+                  <li class="d-flex align-items-center mt-auto">
+                    <div class="isi">
+                      <h3 class="fw-bold name-place">Swiss Butcher</h3>
+                      <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Jl. L. L. R.E. Martadinata No.201, Cihapit, Kec. Bandung Wetan
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card rounded-5 text-white card-1 bg-transparent">
+            <img src="assets/image/tempat.png" class="card-img1" alt="..." height="100%" />
+            <div class="card-img-overlay">
+              <div class="d-flex align-content-end h-100 text-white">
+                <div class="overlay">
+                  <div class="background w-100 h-100 rounded-bottom">
+                    <img src="assets/image/Rectangle 4599.png" alt="" class=" " width="100%" height="100%" />
+                  </div>
+                  <button type="button" class="btn btn-danger rounded-4 btn-lg tombol" style="background-color: #f65f5f">LIHAT LENGKAP</button>
+                </div>
+                <ul class="d-flex list-unstyled">
+                  <li class="d-flex align-items-center mt-auto">
+                    <div class="isi">
+                      <h3 class="fw-bold name-place">Swiss Butcher</h3>
+                      <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Jl. L. L. R.E. Martadinata No.201, Cihapit, Kec. Bandung Wetan
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card rounded-5 text-white card-1 bg-transparent">
+            <img src="assets/image/tempat.png" class="card-img1" alt="..." height="100%" />
+            <div class="card-img-overlay">
+              <div class="d-flex align-content-end h-100 text-white">
+                <div class="overlay">
+                  <div class="background w-100 h-100 rounded-bottom">
+                    <img src="assets/image/Rectangle 4599.png" alt="" class=" " width="100%" height="100%" />
+                  </div>
+                  <button type="button" class="btn btn-danger rounded-4 btn-lg tombol" style="background-color: #f65f5f">LIHAT LENGKAP</button>
+                </div>
+                <ul class="d-flex list-unstyled">
+                  <li class="d-flex align-items-center mt-auto">
+                    <div class="isi">
+                      <h3 class="fw-bold name-place">Swiss Butcher</h3>
+                      <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Jl. L. L. R.E. Martadinata No.201, Cihapit, Kec. Bandung Wetan
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
           <div class="card rounded-5 text-white card-1 bg-transparent">
             <img src="assets/image/tempat.png" class="card-img1" alt="..." height="100%" />
             <div class="card-img-overlay">
@@ -475,6 +674,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="section-heading text-white">
@@ -536,8 +736,15 @@
       <img src="assets/image/footer.svg" alt="" class="footer" width="100%" />
     </div>
 
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
+    <script defer src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
