@@ -97,6 +97,18 @@ Kontak
   border: none;
 }
 
+#contact h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+#contact .belakang{
+  z-index: 0;
+}
+#contact .isi{
+  z-index: 20;
+}
+
 /*---------------------------------------
        PRE LOADER              
   -----------------------------------------*/
