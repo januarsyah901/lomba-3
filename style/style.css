@@ -102,10 +102,10 @@ Kontak
   font-weight: bold;
   font-size: 40px;
 }
-#contact .belakang{
+#contact .belakang {
   z-index: 0;
 }
-#contact .isi{
+#contact .isi {
   z-index: 20;
 }
 
@@ -945,6 +945,10 @@ Offer
   width: 360px;
   height: 450px;
 }
+.card-img2 {
+  object-fit: cover;
+  height: 400px;
+}
 
 .name-place {
   font-family: 'Montserrat';
@@ -990,9 +994,17 @@ Offer
   #custom-cards .tombol {
     font-size: 10px;
   }
+  .card-img2 {
+    object-fit: cover;
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .card-img2 {
+    object-fit: cover;
+    height: 250px;
+  }
   #custom-cards .isi h3 {
     font-size: 20px;
     margin: 0px;
