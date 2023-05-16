@@ -940,10 +940,10 @@ Offer
   height: 100%;
 }
 
-.card-img {
+.card-img1 {
   object-fit: cover;
-  width: max-content;
-  height: max-content;
+  width: 360px;
+  height: 450px;
 }
 
 .name-place {
