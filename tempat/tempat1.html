@@ -34,7 +34,6 @@
 
     <!-- MENU -->
 
-
     <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
       <div class="container inner-navbar">
         <a class="navbar-brand" href="#">
@@ -59,7 +58,9 @@
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
         </button>
 
         <div class="collapse navbar-collapse menu justify-content-end" id="navbarNavDropdown">
@@ -91,66 +92,63 @@
       </div>
     </nav>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content border border-4 border-warning" style="background-color: #260907">
-              <div class="modal-header modal-header-edit" style="border: none">
-                <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Kontak</h1> -->
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div id="contact" class="modal-body position-relative">
-                <img src="../assets/image/aboutus blur kanan.png" alt="" class="position-absolute bg1-blur belakang" />
-                <img src="../assets/image/aboutus blur kiri.png" alt="" class="position-absolute bg2-blur belakang"/>
-                <img src="../assets/image/aboutus kanan bawah.png" alt="" class="position-absolute bg1-makanan belakang"/>
-                <img src="../assets/image/aboutus kiri bawah.png" alt="" class="position-absolute bg2-makanan belakang"/>
-                <div class="position-relative isi">
-                  <div class="col-8 text-center text-white mx-auto">
-                    <span class="text-warning">K O N T A K</span>
-                    <h2>YUK BERIKAN KOMENTAR KALIAN</h2>
-                    <span class="mb-5">karena komentar kalian kami bisa terus berkembang. atau hubungi kamidi nomer +62 8009 9000 999</span>
-                    <div class="mb-3 mt-5 row">
-                      <label for="inputName" class="col-sm-2 col-form-label">Nama</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputName" />
-                      </div>
-                    </div>
-                    <div class="mb-3 row">
-                      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail" />
-                      </div>
-                    </div>
-                    <div class="mb-3 row">
-                      <label for="inputNumber" class="col-sm-2 col-form-label">Nomor</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputNumber" />
-                      </div>
-                    </div>
-                    <div class="mb-3 row">
-                      <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
-                      <div class="col-sm-10">
-                        <input type="date" class="form-control" id="inputDate" />
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="button" class="btn btn-danger btn-lg rounded-5 my-4 tombol-akhir px-5" style="background-color: #f65f5f">submit</button>
-                    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border border-4 border-warning" style="background-color: #260907">
+          <div class="modal-header modal-header-edit" style="border: none">
+            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Kontak</h1> -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="contact" class="modal-body position-relative">
+            <img src="../assets/image/aboutus blur kanan.png" alt="" class="position-absolute bg1-blur belakang" />
+            <img src="../assets/image/aboutus blur kiri.png" alt="" class="position-absolute bg2-blur belakang" />
+            <img src="../assets/image/aboutus kanan bawah.png" alt="" class="position-absolute bg1-makanan belakang" />
+            <img src="../assets/image/aboutus kiri bawah.png" alt="" class="position-absolute bg2-makanan belakang" />
+            <div class="position-relative isi">
+              <div class="col-8 text-center text-white mx-auto">
+                <span class="text-warning">K O N T A K</span>
+                <h2>YUK BERIKAN KOMENTAR KALIAN</h2>
+                <span class="mb-5">karena komentar kalian kami bisa terus berkembang. atau hubungi kamidi nomer +62 8009 9000 999</span>
+                <div class="mb-3 mt-5 row">
+                  <label for="inputName" class="col-sm-2 col-form-label">Nama</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName" />
                   </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" />
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputNumber" class="col-sm-2 col-form-label">Nomor</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputNumber" />
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="inputDate" />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-danger btn-lg rounded-5 my-4 tombol-akhir px-5" style="background-color: #f65f5f">submit</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
     <section class="atas1 mt-batas">
       <div class="row container-fluid mx-auto d-flex justify-content-center">
         <div class="col-lg-4 d-flex justify-content-center">
           <div class="">
-            <img src="../assets/image/tempat/bandung.png" alt="" class="rounded-4" style="  width: 450px;
-            height: 525px;
-            object-fit: cover;
-            " />
+            <img src="../assets/image/tempat/bandung.png" alt="" class="rounded-4" style="width: 450px; height: 525px; object-fit: cover" />
           </div>
         </div>
         <div class="mx-5 col-lg-6 text-white">
