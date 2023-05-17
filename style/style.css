@@ -944,10 +944,12 @@ Offer
   object-fit: cover;
   width: 360px;
   height: 450px;
+  filter: brightness(80%);
 }
 .card-img2 {
   object-fit: cover;
   height: 400px;
+  filter: brightness(80%);
 }
 
 .name-place {
@@ -1290,6 +1292,79 @@ Page Makanan
 
   .atas1 .isi {
     margin-top: 20px;
+  }
+}
+
+/* Testimoni */
+
+#testimoni h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#testimoni i {
+  color: #fdce77;
+  font-size: 12px;
+}
+#testimoni h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#testimoni .card {
+  background-color: #540e0e;
+  width: 14rem;
+}
+#testimoni img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 20;
+}
+
+#testimoni .isi {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+#testimoni .deskripsi {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 500px) {
+  #testimoni .deskripsi {
+    font-size: 16px;
+  }
+  #testimoni i {
+    color: #fdce77;
+    font-size: 15px;
+  }
+  #testimoni h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+  }
+  #testimoni h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  #testimoni .card {
+    background-color: #540e0e;
+    width: 20rem;
+  }
+  #testimoni img {
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+    z-index: 20;
+  }
+
+  #testimoni .isi {
+    margin-top: 80px;
+    margin-bottom: 20px;
   }
 }
 
