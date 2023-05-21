@@ -1439,3 +1439,7 @@ Page Makanan
     z-index: -20;
   }
 }
+
+.hidden {
+  display: none;
+}
